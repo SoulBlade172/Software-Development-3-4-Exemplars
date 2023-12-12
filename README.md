@@ -22,3 +22,8 @@ SoulBlade172:
 -  Study score - 42 (raw)/41 (scaled)
 
 The both of us received A+ for all components of the subject.
+
+<br>
+More examples:
+
+lucwilliam's SAT program (in Python) - https://github.com/lucwilliams/funnytunes
