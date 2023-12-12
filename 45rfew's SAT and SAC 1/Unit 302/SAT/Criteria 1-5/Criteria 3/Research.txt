@@ -1,0 +1,93 @@
+Survey questions:                     
+
+Survey results: - black – survey answers/results, blue – conclusions from results 
+Have you previously used a grading app before? If so what features did you like about it? 
+-	it was pleasing to look at
+-	High level of security 
+-	Easy to use 
+-	Remaining 8 responded no to the first question 
+
+- it seems that most of the responses came from people who have never used a grading app before. This is probably due to bias in the responders as the group surveyed generally wouldn’t have much interest in such a software. for those that did respond yes to the first question and provided an answer for the second (roughly 27 percent) it seems that UI aesthetic, security and easy UX were of general interest.   
+ 
+-	Unsurprisingly the highest amount of users (45.5 percent) selected 5 (being very important) in terms of security. With these results the emphasis on having an encryption system, user login system or even both have vastly increased. However with an encryption system most likely being outside the scope a password system will most likely to be the only security feature included. It came more of a surprise that 18 percent of responses selected 1 (being no importance) and another 18 percent selected 2 (being little importance). This may have simply been bias in sample size or the people surveyed so the importance regrading security will not change.
+ 
+-	There was a consensus for all 3 of the following questions. It seemed that usability (45.5 percent) was the most selected response, followed by reliability (36 percent). By no means does this undermine the importance of portability and robustness (both 9 percent) however with these answers I will now rise the priority of usability and reliability within the scope. 
+ 
+-	Clarity of the UI was the most selected response (45.5 percent). Based on these results I have decided to lower my focus on attractiveness (due to it having the lowest number of selections at 9 percent) of the software and instead focus on how clear the solution is. 
+ 
+-	This was the only question where over 50 percent of responses were one answer. In this case 64 percent of responses selected relevance. Unsurprisingly timeliness had the least number of selections. Based on these results I have decided optimising the software is not very important and will only do it if time permits and that for the UX section most of my focus will centre around relevance  
+Is there anything you would like to see in a grading app that you haven’t yet? 
+-	Option to change themes 
+-	Ability to save and load information 
+
+-	This was the only optional question within the survey and due to the bias discussed earlier there were only two responses. the ability to save/load info was already in the FR and themes was within the NFR as low priority so nothing needs to be changed   
+
+Interview questions (with client): - red – client answers, blue – conclusions from answers 
+1.	Can you describe what your required features are for the solution? {if unsure ask if they’ve used any other software previously} {go more in depth on how the client wants data to be displayed} 
+-	Need to be able to add students easily
+-	Create format (customizable) for a class
+-	Multiple files where you can save/sort by different classes/subjects 
+-	Choose between different grade formats (alphabetical/ numerical) – when creating new class there are options one being the grade format and for the entirety of the class you will be using that grade format 
+-	Being able to sort class data (alphabetical numerical) 
+-	Data being displayed in graph, datagrid for inputting – user can choose what type of organised data to display   
+-	Most of these won’t be too hard to implement; however it may be time consuming which can be a concern if time isn’t managed well. Decisions will have to be made during development whether to simplify and requirements 
+
+2.	Can you describe what your expectations of the aesthetics of the UI are? {if unsure ask if they’ve used any other software previously}
+-	Simple and easy to read – having it look nice is not high priority 
+-	Inputting format is similar to excel 
+-	The client seemed to have used many different grading apps and had a pretty clear idea of how the UI should look however might’ve had difficulty putting it into words 
+
+3.	Can you rank the listed features in order from most important to least important 
+-	Most important: 
+-	Being able to add student data easily 
+-	Sorting class data
+-	Data being displayed 
+-	Creating formats 
+-	Multiple files 
+-	Grade formats 
+-	Inputting formats similar to excel 
+-	Simple and easy to read 
+-	Least important 
+-	As expected, the client prioritised data inputting and disapplying as it is the main purpose of the app though I feel as if the least important – simple and easy to read – should be a higher priority 
+
+4.	What level and measures of security would you expect from the software?
+-	Data should not be easily accessed outside the program – encrypted or password is encryption is outside the scope 
+-	This may be quite hard to implement, especially encryption as it may require external libraries. If the time limit ends up being tight I may have to just do a very simply password system or scrap it entirely 
+5.	If the solution is behind or ahead of schedule, what features would you prefer to be removed or added and in what order? 
+-	Use answers from Q.3 
+-	Simplicity and clarity of the UI will not be removed however it may be slightly lacking  
+6.	Do you have any questions?
+-	do you having any idea of what your scope is – offline only 
+-	would it be something that can be transferred to another device – saved files for classes/subjects can be transferred across devices via cable or online cloud drives 
+       Client requests: - red – NFR, blue, FR
+-	Add and remove student data easily 
+-	Create format (customizable) for a class which can be reused when creating new classes 
+-	Saving/loading data 
+-	Different grade formats (alphabetical/numerical) 
+-	Ability to sort inputted data 
+-	Ability to display data 
+-	Clean and simple UI 
+-	Similar inputting format to excel 
+-	Safety measures when exporting/importing data 
+
+Observation: 
+Manual method using excel:  
+How does the user add student data
+-	When opened displays empty page of cells with #row and #column on the left and top of the page 
+-	User can simply add data by inputting values in a cell; there is no restrictions eg numbers and characters can be put into 1 same cell 
+How does the user create class formats (columns) 
+-	There is no way to create a ‘class format’ which can be reused; instead the user must manually create columns each time for their desired columns (name age subject ect) 
+How can the user display data statistics (mean median ect) 
+-	To display data statistics the user can either display it into a cell using a formula (=average(a1:g1)) or they can create a visual such as a graph or diagram by highlighting the data wanted to be displayed and selecting chosen method. The theme of the data displayed can be easily modified to suit what the user wants 
+How can the user save/load classes 
+-	To save the user can simply use the keyboard shortcut (ctrl shift s) or the user can select file > save as > and then choose to save as .excel, .csv, .xml ect. There is no way to import a class to an already created sheet; the user can only import an entire sheet as a copy 
+How much time does it take to input data for an entire class 
+-	The time for inputting an entire class varies depending on how many columns are required but on average it will take 10 minutes for a class of 25 students. 
+How can the user create new classes/subjects
+-	To create a new class/subject the user can create a new sheet within the same document or input data on the same sheet however this may be hard to analyse. There is not easy clear way to create a subject > class folder 
+What different settings can be applied 
+-	Excel has an extensive settings system with options for things such as themes, colours, fonts, size, cell colour, alignment, creating/deleting rows/columns and many other options which will be mostly unnecessary or useless for a grading manager software.   
+
+Observation results:
+-	It seems that excel has all the built in functions needed for a simple sheet to track grades/classes however none of these functions were developed for the intention of a grades manager. With the expectations and wants of the client basing my grading manager software off excel as a skeleton and then adding/removing/modifying functions to cater for a grading manager may be a good idea.  
+-	Overall, all of this was expected and does not provide any insightful information. 

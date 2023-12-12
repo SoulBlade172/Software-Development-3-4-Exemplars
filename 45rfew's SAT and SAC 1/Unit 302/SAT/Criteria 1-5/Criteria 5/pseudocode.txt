@@ -1,0 +1,81 @@
+blnLoggedIn <- false 
+sub login(username,password)
+   passwords <- read "UserLogins.txt"
+   strUsername <- txtUsername.text
+   strPassword <- txtUsername.text
+   for each line in passwords 
+       strCorrectUsername <- line.split(" ")[0] or null 
+       strCorrectPassword <- line.split(" ")[1] or null 
+       if strUsername = strCorrectUsername and strPassword = strCorrectPassword
+          blnLoggedIn <- true 
+          exit
+       end if
+   end for
+   if blnLoggedIn != true then msgbox.show("Username or password incorrect")
+end sub 
+
+function quickSort(arr, low, high) 
+    if low < high then
+        split <- partition(arr, low, high) 
+        quickSort(arr, low, high -1) 
+        quickSort(arr, low +1, high) 
+    end if  
+end function
+
+function partition(arr, low, high) 
+    pivot <- arr[high] 
+    for i <- low to high DO 
+        if arr[i] <- pivot then 
+            if low != i then 
+                swap arr[low] and arr[i] 
+            end if 
+        low = low + 1 
+        end if 
+    end for 
+end function
+
+function linearSearch(arr, search)
+    for i = 0 to arr.Length do
+        if arr[i] contains seach then
+            arrFoundItems[] ← arr[i]
+            exit
+        end if 
+    end for 
+    return arrFoundItems[]
+end function
+
+function openFile(location, type)
+    file <- CreateObject("OpenFileDialog")
+    file.Title <- "Open file"
+    file.InitialDirectory <- location
+    file.Filter = type
+    if file.ShowDialog() = DialogResult.OK then
+        return file.FileName
+    else
+        return null
+    end if 
+end function 
+
+sub importFile()
+    file <- openFile(Documents, "XML Files")
+    data <- CreateObject("DataSet")
+    try
+        data.ReadXml(file)
+        dgdMain.DataSource <- data.Tables(0)
+    catch ex
+        dgdMain.DataSource <- null
+    end try
+end sub
+
+sub save()
+    saveDialog <- createobject("savefiledialog")
+    saveDialog.filter <- "XML files"
+    saveDialog.title <- "Save DataGridView data as XML file"
+    saveDialog.showdialog()
+    if saveDialog.filename != "" then
+        data <- directcast(dgdMain.datasource, datatable)
+        data.writexml(saveDialog.filename)
+    end if
+end sub
+
+

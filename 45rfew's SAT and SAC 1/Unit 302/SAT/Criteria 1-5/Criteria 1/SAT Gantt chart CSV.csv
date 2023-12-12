@@ -1,0 +1,81 @@
+"WBS #","Name / Title",Type,"Start Date","End Date","Estimated Hours","Actual Hours","Percent Complete",Resources,Predecessors,Notes,Comments,"Task Color"
+1,SAT,project,2023-03-31,2023-07-22,0,0,0,,,,,
+1.1,U302,group,2023-03-31,2023-05-21,0,0,0,,,,,
+1.1.1,Analysis,subgroup,2023-03-31,2023-05-13,0,0,0,,,,,
+1.1.1.1,"Criteria 1 ",subgroup,2023-03-31,2023-04-04,0,0,0,,,,"james black on 2023-03-26 06:32:53
+
+hj",
+1.1.1.1.1,"Create Gantt chart",task,2023-03-31,2023-04-04,0,0,0,,,,,blue2
+1.1.1.2,"Criteria 2",subgroup,2023-04-03,2023-04-07,0,0,0,,,,,
+1.1.1.2.1,"Choose development model",task,2023-04-03,2023-04-06,0,0,0,,1.1.1.1.1,,,blue2
+1.1.1.2.2,"Justify development model",task,2023-04-03,2023-04-06,0,0,0,,1.1.1.2.1,,,grey1
+1.1.1.2.3,"Planning complete",milestone,2023-04-07,2023-04-07,0,0,0,,1.1.1.2.2,,,grey1
+1.1.1.3,"Criteria 3",subgroup,2023-04-07,2023-05-06,0,0,0,,,,,
+1.1.1.3.1,"Interview prep",subgroup,2023-04-07,2023-04-27,0,0,0,,,,,
+1.1.1.3.1.1,"Write survey",task,2023-04-07,2023-04-26,0,0,0,,1.1.1.2.3,,,blue2
+1.1.1.3.1.2,"Write interview questions",task,2023-04-07,2023-04-26,0,0,0,,,,,grey1
+1.1.1.3.1.3,"Write observation criteria ",task,2023-04-07,2023-04-26,0,0,0,,,,,grey1
+1.1.1.3.1.4,"Ready to collect data",milestone,2023-04-27,2023-04-27,0,0,0,,"1.1.1.3.1.1,1.1.1.3.1.2,1.1.1.3.1.3",,,grey1
+1.1.1.3.2,"Data collection ",subgroup,2023-04-27,2023-04-30,0,0,0,,,,,
+1.1.1.3.2.1,"Interview client",task,2023-04-27,2023-04-28,0,0,0,,1.1.1.3.1.4,,,blue2
+1.1.1.3.2.2,"Give survey to client",task,2023-04-27,2023-04-28,0,0,0,,,,,grey1
+1.1.1.3.2.3,"Observe client",task,2023-04-27,2023-04-28,0,0,0,,,,,grey1
+1.1.1.3.2.4,"Collate data",milestone,2023-04-30,2023-04-30,0,0,0,,"1.1.1.3.2.1,1.1.1.3.2.2,1.1.1.3.2.3",,,grey1
+1.1.1.3.3,"Design architecture",subgroup,2023-05-01,2023-05-06,0,0,0,,,,,
+1.1.1.3.3.1,"Identifying data",task,2023-05-01,2023-05-02,0,0,0,,1.1.1.3.2.4,,,blue2
+1.1.1.3.3.2,"Drawing diagrams",task,2023-05-03,2023-05-05,0,0,0,,1.1.1.3.3.1,,,grey1
+1.1.1.3.3.3,"Finished data collection",milestone,2023-05-06,2023-05-06,0,0,0,,1.1.1.3.3.2,,,grey1
+1.1.1.4,"Criteria 4",subgroup,2023-05-08,2023-05-13,0,0,0,,,,,
+1.1.1.4.1,"Software Requirements Specifications",subgroup,2023-05-08,2023-05-13,0,0,0,,,,,
+1.1.1.4.1.1,"Functional requirements",task,2023-05-08,2023-05-10,0,0,0,,1.1.1.3.3.3,,,blue2
+1.1.1.4.1.2,"Non-functional requirements ",task,2023-05-08,2023-05-10,0,0,0,,,,,grey1
+1.1.1.4.1.3,"Technical constraints ",task,2023-05-08,2023-05-10,0,0,0,,,,,grey1
+1.1.1.4.1.4,"Non-technical constraints",task,2023-05-08,2023-05-10,0,0,0,,,,,grey1
+1.1.1.4.1.5,"Scope - Within",task,2023-05-08,2023-05-10,0,0,0,,,,,grey1
+1.1.1.4.1.6,"Scope - Outside",task,2023-05-08,2023-05-10,0,0,0,,,,,grey1
+1.1.1.4.1.7,"Interpretation of data complete",milestone,2023-05-11,2023-05-11,0,0,0,,"1.1.1.4.1.1,1.1.1.4.1.2,1.1.1.4.1.3,1.1.1.4.1.4,1.1.1.4.1.5,1.1.1.4.1.6",,,grey1
+1.1.1.4.1.8,"Create SRS",task,2023-05-11,2023-05-12,0,0,0,,1.1.1.4.1.7,,,blue2
+1.1.1.4.1.9,"SRS completed ",milestone,2023-05-13,2023-05-13,0,0,0,,1.1.1.4.1.8,,,grey1
+1.1.2,"Criteria 5",subgroup,2023-05-15,2023-05-21,0,0,0,,,,,
+1.1.2.1,Design,subgroup,2023-05-15,2023-05-21,0,0,0,,,,,
+1.1.2.1.1,"Create solution design (2) - Critical path ",subgroup,2023-05-15,2023-05-21,0,0,0,,,,,
+1.1.2.1.1.1,"Create mockups ",task,2023-05-15,2023-05-17,0,0,0,,1.1.1.4.1.9,,,red1
+1.1.2.1.1.2,"Write pseudocode ",task,2023-05-15,2023-05-17,0,0,0,,,,,red1
+1.1.2.1.1.3,"Create data dictionary ",task,2023-05-15,2023-05-17,0,0,0,,,,,red1
+1.1.2.1.1.4,"List object descriptions ",task,2023-05-15,2023-05-17,0,0,0,,,,,red1
+1.1.2.1.1.5,"Evaluate design ideas",task,2023-05-18,2023-05-18,0,0,0,,"1.1.2.1.1.1,1.1.2.1.1.2,1.1.2.1.1.3,1.1.2.1.1.4",,,red1
+1.1.2.1.1.6,"Create final design",task,2023-05-18,2023-05-19,0,0,0,,"1.1.2.1.1.1,1.1.2.1.1.5",,,red1
+1.1.2.1.1.7,"Solution design chosen",milestone,2023-05-21,2023-05-21,0,0,0,,1.1.2.1.1.6,,,grey1
+1.2,U401,group,2023-05-22,2023-07-22,0,0,0,,,,,
+1.2.1,Development,subgroup,2023-05-22,2023-07-15,0,0,0,,,,,
+1.2.1.1,"Criteria 6",subgroup,2023-05-22,2023-06-26,0,0,0,,,,,
+1.2.1.1.1,Requirements,subgroup,2023-05-22,2023-06-26,0,0,0,,,,,
+1.2.1.1.1.1,Manipulation,task,2023-05-22,2023-06-23,0,0,0,,1.1.2.1.1.7,,,blue2
+1.2.1.1.1.2,Validation ,task,2023-05-22,2023-06-23,0,0,0,,,,,grey1
+1.2.1.1.1.3,"Implement UI ",task,2023-05-22,2023-06-23,0,0,0,,,,,grey1
+1.2.1.1.1.4,"Internal documentation ",task,2023-05-22,2023-06-23,0,0,0,,,,,grey1
+1.2.1.1.1.5,Testing ,task,2023-05-22,2023-06-23,0,0,0,,,,,grey1
+1.2.1.1.1.6,"Annotate changes to evaluation criteria ",task,2023-05-22,2023-06-23,0,0,0,,,,,grey1
+1.2.1.1.1.7,"Prototype 1 complete ",milestone,2023-06-26,2023-06-26,0,0,0,,,,,grey1
+1.2.1.2,"Criteria 7",subgroup,2023-06-26,2023-07-02,0,0,0,,,,,
+1.2.1.2.1,"Refinement - Critical path",subgroup,2023-06-26,2023-07-02,0,0,0,,,,,
+1.2.1.2.1.1,Manipulation ,task,2023-06-26,2023-06-30,0,0,0,,1.2.1.1.1.7,,,red1
+1.2.1.2.1.2,Validation ,task,2023-06-26,2023-06-30,0,0,0,,,,,red1
+1.2.1.2.1.3,Testing ,task,2023-06-26,2023-06-30,0,0,0,,,,,red1
+1.2.1.2.1.4,"Internal documentation ",task,2023-06-26,2023-06-30,0,0,0,,,,,red1
+1.2.1.2.1.5,"Create testing table ",task,2023-06-26,2023-06-30,0,0,0,,,,,red1
+1.2.1.2.1.6,"Write security description ",task,2023-06-26,2023-06-30,0,0,0,,,,,red1
+1.2.1.2.1.7,"Prototype 2 complete ",milestone,2023-07-02,2023-07-02,0,0,0,,,,,grey1
+1.2.1.3,"Criteria 8",subgroup,2023-07-10,2023-07-15,0,0,0,,,,,
+1.2.1.3.1,Presentation,subgroup,2023-07-10,2023-07-15,0,0,0,,,,,
+1.2.1.3.1.1,"Usability testing ",task,2023-07-10,2023-07-14,0,0,0,,1.2.1.2.1.7,,,blue2
+1.2.1.3.1.2,"Document results ",task,2023-07-10,2023-07-14,0,0,0,,1.2.1.3.1.1,,,grey1
+1.2.1.3.1.3,"Further manipulation ",task,2023-07-10,2023-07-14,0,0,0,,,,,grey1
+1.2.1.3.1.4,"Document results ",task,2023-07-10,2023-07-14,0,0,0,,1.2.1.3.1.3,,,grey1
+1.2.1.3.1.5,"Final solution complete ",milestone,2023-07-15,2023-07-15,0,0,0,,"1.2.1.3.1.2,1.2.1.3.1.4",,,grey1
+1.2.2,"Evaluation ",subgroup,2023-07-17,2023-07-22,0,0,0,,,,,
+1.2.2.1,"Criteria 9 + 10",subgroup,2023-07-17,2023-07-22,0,0,0,,,,,
+1.2.2.1.1,"Solution evaluation ",task,2023-07-17,2023-07-21,0,0,0,,1.2.1.3.1.5,,,grey1
+1.2.2.1.2,"Project evaluation ",task,2023-07-17,2023-07-21,0,0,0,,,,,grey1
+1.2.2.1.3,"SAT completed ",milestone,2023-07-22,2023-07-22,0,0,0,,"1.2.2.1.1,1.2.2.1.2",,,grey1
+1.3,,group,,,0,0,0,,,,,
