@@ -9,6 +9,7 @@ If you are looking for coding and programming examples, please refer to 45rfew's
 Feel free to download and view the work as you wish and use it for whatever educational reasons you deem necessary, **however directly copying the work is strictly discouraged. If you get found out by your teacher that you have copied someone's work, then you could receive severe ramifications.**
 
 **Marks and study scores:**
+
 SoulBlade172:
 -  SAT 1 - Criterias 1-5 received marks from 9-10 (out of 10)
 -  SAT 2 - Very High (~87%, I was unable to get the scores for each criterion. Crtieria 6 is most likely the lowest scored)
