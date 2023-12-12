@@ -2,7 +2,7 @@
 ## The work in this repository applies to the 2020-2024 study design (given its similarities, the study design used from 2016-2019 also mostly applies to the work here, although not completely)
 
 This repository hosts the work of SoulBlade172 (me) and 45rfew. All of the work I did for my SAT is housed here as well as 45rfew's, as well as their SAC work. Although the SATs and SACs may differ between schools, the overall nature of the assessments should remain the same. Through the creation of this repository, 45rfew and I hope to provide students of Software Development assistance in understanding what is expected of the subject and guide students to being able to achieve the best marks they can. 
-**This repository is not a study guide for the subject, so please do not expect things like study tips and notes. For that, please visit vcedata.com (planned to be shutdown by the end of 2024)**
+**This repository is not a study guide for the subject, so please do not expect things like study tips and notes. For that, please visit vcedata.com (planned to be shutdown by the end of 2024). This repository also does not contain any resources related to the SACs other than the first programming related one nor the exam.**
 
 If you are looking for coding and programming examples, please refer to 45rfew's work. Although the coding within their work is generally more complicated than what the average student can produce (nor is it expected by the subject and does not necessarily provide extra marks), it is better coded than my work.
 
